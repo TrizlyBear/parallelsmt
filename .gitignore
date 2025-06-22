@@ -1,0 +1,15 @@
+bm/
+.vscode/
+__pycache__
+benchmarks/
+bin/
+bitwuzla/
+bm/
+bmslot/
+gosat/
+paper/
+resdumps/*.res
+results/
+SLOT/
+xsat/
+*.ipynb
