@@ -3,6 +3,8 @@ This repository presents a parallel SMT solver. Solvers can be found in `solvers
 ```py
 import many from many
 import solvers from library
-many([solvers["bitwuzla"], solvers["gosat"]], util.fromFolder("bm/griggio",10), 60)
+import util
+
+print(many([solvers["bitwuzla"], solvers["gosat"]], util.fromFolder("bm/griggio",10), 60))
 ```
 This will run Bitwuzla and GoSAT in parallel, solving the first 10 problems from the `griggio` benchmark (assuming it is present) with a timeout of 60 seconds.
